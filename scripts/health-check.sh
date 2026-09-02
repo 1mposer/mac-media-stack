@@ -32,7 +32,7 @@ check_service() {
     local expected="${3:-200}"
 
     status=$(curl -s -o /dev/null -w "%{http_code}" --max-time 5 "$url" 2>/dev/null)
-    if [[ "$status" == "$expected" || "$status" == "302" || "$status" == "301" ]]; then
+    if [[ "$status" == "$expected" || "$status" == "302" || "$status" == "301" || "$status" == "307" ]]; then
         echo -e "  ${GREEN}OK${NC}  $name"
         ((PASS++))
     else

@@ -12,7 +12,7 @@ services:
     environment:
       - VPN_SERVICE_PROVIDER=protonvpn
       - VPN_TYPE=wireguard
-      - SERVER_COUNTRIES=United States
+      - SERVER_COUNTRIES=Sweden
       - PORT_FORWARD_ONLY=on
       - VPN_PORT_FORWARDING=on
       - VPN_PORT_FORWARDING_PROVIDER=protonvpn
